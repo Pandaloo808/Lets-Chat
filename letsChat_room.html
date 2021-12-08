@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title>Kwitter Room</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<div class="container">
+<button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logout()">Logout</button>
+	<center>
+		<h1 class="header">	
+			LetsChat	
+			<sup>
+				<img src="https://media.istockphoto.com/vectors/speech-bubble-icon-isolated-on-white-background-vector-id1228943446?k=20&m=1228943446&s=170667a&w=0&h=aWXVixyeHh72PmHzM712zQ0CX-4KMcC3bD4jVS8rBII=">
+			</sup>
+		</h1>
+		<h3 id="user_name" class="color_white"></h3>
+		<div class="form-group input_div_room_page">
+			<label>#Add Room: </label>
+                    <input type="text" id="room_name" class="form-control" placeholder="#roomname"
+		</div>
+		<button class="btn btn-success" onclick="addroom()">#Add Room</button>
+		<h3 class="color_black">#TRENDINGROOMS</h3>
+	
+	</center>
+</div>
+<script src="letsChat_room.js"></script>
+</body>
+</html>
