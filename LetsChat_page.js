@@ -23,5 +23,5 @@ function send(){
 function logout(){
   localStorage.removeItem("user_name");
   localStorage.removeItem("room_name");
-  window.location="index.html"
+  window.location="LetsChat_page.html"
 }
