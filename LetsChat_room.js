@@ -33,7 +33,7 @@ function getData() {
 function redirectToRoomName(name){
 console.log(name);
   localStorage.setItem("room_name",name);
-  window.location="kwitter_page.html";
+  window.location="LetsChat_page.html";
 }
 function logout(){
   localStorage.removeItem("user_name");
